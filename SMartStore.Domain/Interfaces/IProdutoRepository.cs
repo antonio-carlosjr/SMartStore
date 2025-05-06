@@ -7,12 +7,13 @@ using SMartStore.Domain.Entities;
 
 namespace SMartStore.Domain.Interfaces
 {
-    public interface IProdutoRepository
+    internal interface IProdutoRepository
     {
         Produto obterPorId(int id);
         IEnumerable<Produto> Listar();
         void Adicionar(Produto produto);
         void Atualizar(Produto produto);
         void Remover(int id);
+
     }
 }
